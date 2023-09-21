@@ -1,2 +1,2 @@
 # The-Odin-Project
-Practice problems from TOP.
+Practice problems and projects from TOP.
