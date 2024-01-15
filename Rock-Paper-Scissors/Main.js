@@ -1,3 +1,9 @@
+/*Write a NEW function called game(). Use the previous function inside of this one to play a best-of-five game that keeps score and reports a winner or loser at the end.
+You have not officially learned how to “loop” over code to repeat function calls… 
+Just call your playRound function 5 times in a row. 
+Loops are covered in the next lesson.
+At this point you should be using console.log() to display the results of each round and the winner at the end.*/
+
 function playGame() {
   let playerScore = 0;
   let computerScore = 0;
@@ -24,6 +30,7 @@ function playGame() {
     ) {
       roundWinner = "You lose! Scissors beat paper.";
       computerScore++;
+      return computerScore;
     } else if (
       playerSelection === "scissors" &&
       computerSelection === "paper"
@@ -31,7 +38,6 @@ function playGame() {
       roundWinner = "You win! Scissors beat paper.";
       playerScore++;
     }
-
     console.log(roundWinner);
     console.log(`Player Score: ${playerScore}`);
     console.log(`Computer Score: ${computerScore}`);
